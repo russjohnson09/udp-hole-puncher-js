@@ -103,3 +103,14 @@ To run this test example, execute the following cmd on two machines A and B:
 server-A$ npm run-script peer -- --bind=12345 --addr=<PUBLIC ADDR OF B> --port=23456
 server-B$ npm run-script peer -- --bind=23456 --addr=<PUBLIC ADDR OF A> --port=12345
 ```
+
+
+##Amazon
+23456
+
+open to udp connections in security
+
+npm run-script peer -- --bind=23456 --addr=97.70.117.83 --port=63355
+
+
+npm run-script peer -- --bind=63355 --addr=52.206.232.250 --port=23456
