@@ -27,6 +27,7 @@ const argv = require('yargs')
 
 const dataMessages = 10;
 
+let socket;
 
 // send data
 const sendData = () => {
@@ -48,7 +49,7 @@ function tryToConnect()
 
   console.log(`tryToConnect`);
   // create new socket
-  const socket = dgram.createSocket('udp4');
+  socket = dgram.createSocket('udp4');
 
   // socket configuration
   socket.on('error', (error) => {
