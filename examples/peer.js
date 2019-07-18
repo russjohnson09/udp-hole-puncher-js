@@ -76,7 +76,9 @@ function tryToConnect()
       console.log(`got timeout`);
       console.log(`woops, something went wrong: ${error}`);
 
-      setTimeout(() => {tryToConnect()},0)
+      socket.close()
+
+      setTimeout(() => {tryToConnect()},1000)
     });
     puncher.connect(argv.addr, argv.port, function(x,y) {
       console.log(`puncher connect failed?`,x,y)

@@ -114,3 +114,7 @@ npm run-script peer -- --bind=23456 --addr=97.70.117.83 --port=63355
 
 
 npm run-script peer -- --bind=63355 --addr=52.206.232.250 --port=23456
+
+
+npm run-script peer -- --bind=23456 --addr=96.85.110.86 --port=63355
+
